@@ -146,10 +146,6 @@ int select_all(char *filename){
 
 
             if(registro->removido == '1'){
-                    char aux;
-                    for(int i = 0; i < 30; i++){
-                        fread(&aux, sizeof(char),1,binario);
-                    }
 
                     fread(&(registro->grupo), sizeof(int), 1, binario);
                     fread(&(registro->popularidade), sizeof(int), 1, binario);
